@@ -11,4 +11,6 @@ Clone the repository and then run:
 bundle install
 rake db:create
 rake db:migrate
-rails server (NOTE: rails server must run on port 3000)
+rails server
+
+NOTE: rails server must run on port 3000

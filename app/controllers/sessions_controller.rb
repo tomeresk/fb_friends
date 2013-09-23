@@ -17,7 +17,4 @@ class SessionsController < ApplicationController
   def failure
   	render :text => "You did not autorize the app!"
   end
-
-  def destroy
-  end
 end

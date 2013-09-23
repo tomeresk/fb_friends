@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
 
   	@user = User.find_by_name_and_email(auth_hash["extra"]["raw_info"]["name"], auth_hash["extra"]["raw_info"]["email"])
   	unless @user
-  	  user = User.new :name => auth_hash["extra"]["raw_info"]["name"], :email => auth_hash["extra"]["raw_info"]["email"]
-  	  user.save
+  	  @user = User.new :name => auth_hash["extra"]["raw_info"]["name"], :email => auth_hash["extra"]["raw_info"]["email"]
+  	  @user.save
   	end
   end
 

@@ -59,6 +59,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'jasmine'
+  gem 'jasmine-jquery-rails'
 end
 
 group :test do
